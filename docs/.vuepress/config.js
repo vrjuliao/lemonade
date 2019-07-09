@@ -1,7 +1,7 @@
 module.exports = {
 	base: '/vuepress/',
 	head: [
-		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/assets/bomb.png' }]
+		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/assets/img/bomb.png' }]
 	],
 	// title: 'Hello VuePress',
 	// description: 'VuePress test on github project page',
