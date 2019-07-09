@@ -1,5 +1,5 @@
 module.exports = {
-	base: 'vuepress/',
+	base: '/',
 	head: [
 		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/bomb.png' }]
 	],
