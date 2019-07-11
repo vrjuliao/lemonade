@@ -5,26 +5,69 @@ module.exports = {
 	],
 	// title: 'Hello VuePress',
 	// description: 'VuePress test on github project page',
+
+	locales: {
+		'/': {
+			lang: 'en-US',
+			title: 'VuePress Test',
+			description: 'Testing VuePress'
+		},
+		'/pt-br/': {
+			lang: 'pt-br',
+			title: 'Teste do VuePress',
+			description: 'Testando VuePress'
+		}
+	},
+
 	themeConfig: {
-		logo: '/assets/bomb.png',
+		logo: '/assets/img/bomb.png',
 		searchMaxSuggestions: 10,
-		nav: [
-			{
-				//text: '<label on navbar>', link: '<link to redirect>'
-				text: 'Home', link: '/'
-			}
-		],
-		sidebar: [
-			{
-				title: 'Grupo 1',
-				collapsable: true,
-				children: [
-					//['<route>', '<label to show on sidebar>']
-					['/', 'Home'],
-					['/teste2/', 'Teste 2'],
-					['/teste2/1.md', 'Teste 2.1']
+		locales: {
+			'/' : {
+				selectText: 'Languages',
+				label: 'English',
+				nav: [
+					{
+						//text: '<label on navbar>', link: '<link to redirect>'
+						text: 'Home', link: '/'
+					}
+				],
+				sidebar: [
+					{
+						title: 'One',
+						collapsable: true,
+						children: [
+							//['<route>', '<label to show on sidebar>']
+							['/', 'Home'],
+							['/teste2/', 'Two'],
+							['/teste2/1.md', 'Two dot one']
+						]
+					}
+				]
+			},
+			'/pt-br/' : {
+				selectText: 'Idiomas',
+				label: 'Português',
+				nav: [
+					{
+						//text: '<label on navbar>', link: '<link to redirect>'
+						text: 'Início', link: '/pt-br/'
+					}
+				],
+				sidebar: [
+					{
+						title: 'Um',
+						collapsable: true,
+						children: [
+							//['<route>', '<label to show on sidebar>']
+							['/pt-br/', 'Início'],
+							['/pt-br/teste2/', 'Dois'],
+							['/pt-br/teste2/1.md', 'Dois ponto um']
+						]
+					}
 				]
 			}
-		]
+
+		}
 	}
 }
