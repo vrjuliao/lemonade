@@ -1,11 +1,23 @@
+const path = require("path");
+
 module.exports = {
 	base: '/vuepress/',
+
+	//webpack configure
+	configureWebpack: {
+		resolve: {
+			alias: {
+				'@assets': path.resolve(__dirname,"/assets")
+			}
+		}
+	},
+	
+	//html header
 	head: [
 		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/assets/img/bomb.png' }]
 	],
-	// title: 'Hello VuePress',
-	// description: 'VuePress test on github project page',
 
+	//support languages
 	locales: {
 		'/': {
 			lang: 'en-US',
@@ -19,9 +31,16 @@ module.exports = {
 		}
 	},
 
+
 	themeConfig: {
-		logo: '/assets/img/bomb.png',
+		//Header page logo
+		// logo: '/assets/img/bomb.png',
+		logo: '~@assets/img/bomb.png',
+		
+		//searchBox feature
 		searchMaxSuggestions: 10,
+		
+		//support languages
 		locales: {
 			'/' : {
 				selectText: 'Languages',
@@ -63,6 +82,14 @@ module.exports = {
 							['/pt-br/', 'Início'],
 							['/pt-br/teste2/', 'Dois'],
 							['/pt-br/teste2/1.md', 'Dois ponto um']
+						]
+					},
+					{
+						title: 'Visualização de Dados',
+						collapsable: true,
+						children: [
+							//['<route>', '<label to show on sidebar>']
+							['/pt-br/visualizacao_de_dados/tabela.md', 'Tabela']
 						]
 					}
 				]
