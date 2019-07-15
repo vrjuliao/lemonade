@@ -2,15 +2,6 @@ const path = require("path");
 
 module.exports = {
 	base: '/vuepress/',
-
-	//webpack configure
-	configureWebpack: {
-		resolve: {
-			alias: {
-				'@assets': path.resolve(__dirname,"/assets")
-			}
-		}
-	},
 	
 	//html header
 	head: [
@@ -34,8 +25,7 @@ module.exports = {
 
 	themeConfig: {
 		//Header page logo
-		// logo: '/assets/img/bomb.png',
-		logo: '~@assets/img/bomb.png',
+		logo: '/assets/img/bomb.png',
 		
 		//searchBox feature
 		searchMaxSuggestions: 10,

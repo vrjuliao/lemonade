@@ -27,8 +27,23 @@ Nome da Tarefa
 
 **Base de Dados:** [Iris][3]
 
+![Ler dados](assets/img/visualizacao_de_dados/image1.png)
 
+1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
+2. Na operação **Tabela**, adicione um título. Deixe o campo **Atributos** vazio ou selecione todos os existentes.
+	![Tabela](assets/img/visualizacao_de_dados/image3.png)
+3. Execute o fluxo e visualize o resultado
+	![Resultados](assets/img/visualizacao_de_dados/image4.png)
+4. Selecione apenas os valores *“sepallength”* e *“sepalwidth”* para o parâmetro **Atributos**.
+	![Valores de parâmetros](assets/img/visualizacao_de_dados/image5.png)
+5. Execute o fluxo novamente e visualize o resultado
+	![Novos resultados](assets/img/visualizacao_de_dados/image2.png)
+
+
+
+Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [1]: /pt-br/
 [2]: /pt-br/
 [3]: /pt-br/
+[4]: /pt-br/
