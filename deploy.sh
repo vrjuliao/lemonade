@@ -12,7 +12,7 @@ else
 	
 	# put buil archives on root directory
 	cp -rf docs/.vuepress/dist/* ./
-	cp -rf docs/assets/img/* ./assets/img
+	# cp -rf docs/assets/img/* ./assets/img
 	rm -rf docs/.vuepress/dist
 fi
 exit

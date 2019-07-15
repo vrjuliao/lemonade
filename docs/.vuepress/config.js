@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
 	base: '/vuepress/',
-	
+
 	//html header
 	head: [
-		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/assets/img/bomb.png' }]
+		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/bomb.png' }]
 	],
 
 	//support languages
@@ -25,7 +25,7 @@ module.exports = {
 
 	themeConfig: {
 		//Header page logo
-		logo: '/assets/img/bomb.png',
+		logo: '/img/bomb.png',
 		
 		//searchBox feature
 		searchMaxSuggestions: 10,
