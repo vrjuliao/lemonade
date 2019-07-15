@@ -3,6 +3,14 @@ const path = require("path");
 module.exports = {
 	base: '/vuepress/',
 
+	configureWebpack: {
+		resolve: {
+			alias: {
+				'@alias': 'assets'
+			}
+		}
+	},
+
 	//html header
 	head: [
 		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/bomb.png' }]
