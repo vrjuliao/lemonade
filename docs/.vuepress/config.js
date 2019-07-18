@@ -43,13 +43,20 @@ module.exports = {
 				],
 				sidebar: [
 					{
-						title: 'One',
+						type : 'group',
+						title: '1',
 						collapsable: true,
 						children: [
-							//['<route>', '<label to show on sidebar>']
-							['/', 'Home'],
-							['/teste2/', 'Two'],
-							['/teste2/1.md', 'Two dot one']
+							{
+								type: 'group',
+								title: '1.1',
+								collapsable: true,
+								children: [
+									['/', '1.1.1'],
+									// ['/teste2/', 'Two'],
+									// ['/teste2/1.md', 'Two dot one']
+								]
+							}
 						]
 					}
 				]
@@ -65,26 +72,32 @@ module.exports = {
 				],
 				sidebar: [
 					{
-						title: 'Um',
+						type: 'group',
+						title: 'Spark',
 						collapsable: true,
-						children: [
-							//['<route>', '<label to show on sidebar>']
-							['/pt-br/', 'Início'],
-							['/pt-br/teste2/', 'Dois'],
-							['/pt-br/teste2/1.md', 'Dois ponto um']
-						]
-					},
-					{
-						title: 'Visualização de Dados',
-						collapsable: true,
-						children: [
-							//['<route>', '<label to show on sidebar>']
-							['/pt-br/visualizacao_de_dados/tabela.md', 'Tabela']
+						sidebarDepth: 1,
+						children:[
+							{
+								type: 'group',
+								title: 'Visualização de Dados',
+								collapsable: true,
+								sidebarDepth: 1,
+								children: [
+									//['<route>', '<label to show on sidebar>']
+									['/pt-br/visualizacao_de_dados/tabela.md', 'Tabela'],
+									['/pt-br/visualizacao_de_dados/sumario_estatistico.md', 'Sumário Estatístico'],
+									['/pt-br/visualizacao_de_dados/publicar_como_dashboard.md', 'Publicar como Dashboard'],
+									['/pt-br/visualizacao_de_dados/mapa.md', 'Mapa'],
+									['/pt-br/visualizacao_de_dados/histograma.md', 'Histograma'],
+									['/pt-br/visualizacao_de_dados/grafico_de_rosca.md', 'Gráfico de Rosca'],
+									['/pt-br/visualizacao_de_dados/grafico_de_pizza.md', 'Gráfico de Pizza'],
+									['/pt-br/visualizacao_de_dados/grafico_de_linha.md', 'Gráfico de Linha'],
+								]
+							}
 						]
 					}
 				]
 			}
-
 		}
 	}
 }
