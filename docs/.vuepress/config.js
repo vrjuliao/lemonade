@@ -24,6 +24,8 @@ module.exports = {
 
 
 	themeConfig: {
+		displayAllHeaders: true,
+
 		//Header page logo
 		logo: '/img/bomb.png',
 		
@@ -68,35 +70,66 @@ module.exports = {
 					{
 						//text: '<label on navbar>', link: '<link to redirect>'
 						text: 'Início', link: '/pt-br/'
-					}
+					},
+					{ text: 'Keras', link: '/pt-br/keras'},
+					{ text: 'Spark', link: '/pt-br/spark/visualizacao_de_dados/sumario_estatistico'}
 				],
-				sidebar: [
-					{
-						type: 'group',
-						title: 'Spark',
-						collapsable: true,
-						sidebarDepth: 1,
-						children:[
-							{
-								type: 'group',
-								title: 'Visualização de Dados',
-								collapsable: true,
-								sidebarDepth: 1,
-								children: [
-									//['<route>', '<label to show on sidebar>']
-									['/pt-br/visualizacao_de_dados/tabela.md', 'Tabela'],
-									['/pt-br/visualizacao_de_dados/sumario_estatistico.md', 'Sumário Estatístico'],
-									['/pt-br/visualizacao_de_dados/publicar_como_dashboard.md', 'Publicar como Dashboard'],
-									['/pt-br/visualizacao_de_dados/mapa.md', 'Mapa'],
-									['/pt-br/visualizacao_de_dados/histograma.md', 'Histograma'],
-									['/pt-br/visualizacao_de_dados/grafico_de_rosca.md', 'Gráfico de Rosca'],
-									['/pt-br/visualizacao_de_dados/grafico_de_pizza.md', 'Gráfico de Pizza'],
-									['/pt-br/visualizacao_de_dados/grafico_de_linha.md', 'Gráfico de Linha'],
-								]
-							}
-						]
-					}
-				]
+				sidebar: {
+					'/pt-br/spark/' : [
+						{
+							title: 'Visualização de Dados',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['visualizacao_de_dados/tabela.md', 'Tabela'],
+								['visualizacao_de_dados/sumario_estatistico.md', 'Sumário Estatístico'],
+								['visualizacao_de_dados/publicar_como_dashboard.md', 'Publicar como Dashboard'],
+								['visualizacao_de_dados/mapa.md', 'Mapa'],
+								['visualizacao_de_dados/histograma.md', 'Histograma'],
+								['visualizacao_de_dados/grafico_de_rosca.md', 'Gráfico de Rosca'],
+								['visualizacao_de_dados/grafico_de_pizza.md', 'Gráfico de Pizza'],
+								['visualizacao_de_dados/grafico_de_linha.md', 'Gráfico de Linha'],
+								['visualizacao_de_dados/grafico_de_dispersao.md', 'Gráfico de Dispersão'],
+								['visualizacao_de_dados/grafico_de_barra.md', 'Gráfico de Barra'],
+								['visualizacao_de_dados/grafico_de_area.md', 'Gráfico de Área'],
+								['visualizacao_de_dados/box_plot.md', 'Box Plot'],
+							]
+						},
+						/*{
+							title: 'Transformação de Dados',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								'transformacao_de_dados/'
+							]
+						},*/
+						{
+							title: 'Modelo e Avaliação',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['modelo_e_avaliacao/avaliar_modelo.md', 'Avaliar Modelo'],
+								['modelo_e_avaliacao/aplicar_modelo.md', 'Aplicar Modelo'],
+							]
+						},
+						{
+							title: 'Manipulação de Dados',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['manipulacao_de_dados/tratar_dados_ausentes.md', 'Tratar Dados Ausentes'],
+								['manipulacao_de_dados/selecionar_atributos.md', 'Selecionar Atributos'],
+								['manipulacao_de_dados/juncao.md', 'Junção'],
+								['manipulacao_de_dados/interseccao.md', 'Intersecção'],
+								['manipulacao_de_dados/filtrar_por_funcao.md', 'Filtrar por Função']
+							]
+						}
+					]
+				}
 			}
 		}
 	}
