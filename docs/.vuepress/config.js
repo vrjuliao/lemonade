@@ -125,7 +125,14 @@ module.exports = {
 								['manipulacao_de_dados/selecionar_atributos.md', 'Selecionar Atributos'],
 								['manipulacao_de_dados/juncao.md', 'Junção'],
 								['manipulacao_de_dados/interseccao.md', 'Intersecção'],
-								['manipulacao_de_dados/filtrar_por_funcao.md', 'Filtrar por Função']
+								['manipulacao_de_dados/filtrar_por_funcao.md', 'Filtrar por Função'],
+								['manipulacao_de_dados/coluna_substituir_valor.md', 'Coluna - Substituir Valor'],
+								['manipulacao_de_dados/coluna_ordenar.md', 'Coluna - Ordenar'],
+								['manipulacao_de_dados/coluna_adicionar_nova.md', 'Coluna - Adicionar Nova(s)'],
+								['manipulacao_de_dados/coluna_diferenca.md', 'Coluna - Diferença'],
+								['manipulacao_de_dados/linha_remover_duplicadas.md', 'Linha - Remover Duplicadas'],
+								['manipulacao_de_dados/linha_agrupar_por_funcao.md', 'Linha - Agrupar por Função'],
+								['manipulacao_de_dados/linha_adicionar_nova.md', 'Linha - Adicionar Nova(s)']
 							]
 						}
 					]
