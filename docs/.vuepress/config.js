@@ -134,6 +134,28 @@ module.exports = {
 								['manipulacao_de_dados/linha_agrupar_por_funcao.md', 'Linha - Agrupar por Função'],
 								['manipulacao_de_dados/linha_adicionar_nova.md', 'Linha - Adicionar Nova(s)']
 							]
+						},
+						{
+							title: 'Entrada e Saída',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['entrada_e_saida/salvar_modelo.md', 'Salvar Modelo'],
+								['entrada_e_saida/salvar_dados.md', 'Salvar Dados'],
+								['entrada_e_saida/ler_dados.md', 'Ler Dados'],
+								['entrada_e_saida/carregar_modelo.md', 'Carregar Modelo']
+							]
+						},
+						{
+							title: 'Documentação Geral',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['documentacao_geral/documentacao_geral.md', 'Documentação Geral'],
+								['documentacao_geral/utilizacao_basica_da_plataforma_lemonade.md', 'Utilização Básica da Plataforma Lemonade']
+							]
 						}
 					]
 				}
