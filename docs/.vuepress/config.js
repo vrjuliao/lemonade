@@ -150,11 +150,40 @@ module.exports = {
 						{
 							title: 'Documentação Geral',
 							collapsable: true,
-							sidebarDepth: 1,
+							sidebarDepth: 2,
 							children: [
 								//['<route>', '<label to show on sidebar>']
 								['documentacao_geral/documentacao_geral.md', 'Documentação Geral'],
 								['documentacao_geral/utilizacao_basica_da_plataforma_lemonade.md', 'Utilização Básica da Plataforma Lemonade']
+							]
+						},
+						{
+							title: 'Base de Dados',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['base_de_dados/', 'Base de Dados']
+							]
+						},
+						{
+							title: 'Avançado',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['avancado/executar_comandos_sql.md', 'Executar Commandos SQL'],
+								['avancado/executar_codigo_python.md', 'Executar Código Python']
+							]
+						},
+						{
+							title: 'Aprendizado de Máquina',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['aprendizado_de_maquina/regressor_linear_generalizado.md', 'Regressão - Regressor Linear Generalizado'],
+								['aprendizado_de_maquina/regressor_linear.md', 'Regressão - Regressor Linear']
 							]
 						}
 					]
