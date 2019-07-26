@@ -5,7 +5,7 @@ module.exports = {
 
 	//html header
 	head: [
-		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/bomb.png' }]
+		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/logo.png' }]
 	],
 
 	//support languages
@@ -17,7 +17,7 @@ module.exports = {
 		},
 		'/pt-br/': {
 			lang: 'pt-br',
-			title: 'Teste do VuePress',
+			title: 'Lemonade',
 			description: 'Testando VuePress'
 		}
 	},
@@ -27,7 +27,7 @@ module.exports = {
 		displayAllHeaders: true,
 
 		//Header page logo
-		logo: '/img/bomb.png',
+		logo: '/img/logo.png',
 		
 		//searchBox feature
 		searchMaxSuggestions: 10,

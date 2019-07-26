@@ -120,14 +120,33 @@ export default {
   display inline-block
   a
     line-height 1.4rem
+    /*line-height 2rem*/
     color inherit
     &:hover, &.router-link-active
       color $accentColor
-  .nav-item
+  .nav-item/*
+    background-color rgba(255, 255, 255, 0.5)
     position relative
     display inline-block
-    margin-left 1.5rem
-    line-height 2rem
+    border-radius 15% 15%
+    padding 0.2rem 0.5rem
+    margin-left 1rem
+    line-height 1.4rem*/
+    position relative
+    display inline-block
+    background-color: white;
+    border 0
+    outline none
+    border-radius 4px 4px 4px 4px
+    color #ff4b95
+    font-weight 500
+    margin-left 1rem 
+    padding 4px 16px
+    text-decoration none
+    box-shadow -1px 1px 4px #EEE
+    line-height 16px
+    transition all 0.3s
+    box-shadow 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16)
     &:first-child
       margin-left 0
   .repo-link

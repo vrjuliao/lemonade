@@ -1,5 +1,7 @@
 <template>
   <header class="navbar">
+    
+
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link
@@ -31,7 +33,12 @@
         :options="algolia"
       />
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
+      <!-- <NavLinks class="can-hide"/> -->
       <NavLinks class="can-hide"/>
+      <div class="div-out">
+        <div class="div-in"></div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -107,7 +114,7 @@ $navbar-horizontal-padding = 1.5rem
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color white
+    /*background-color white*/
     white-space nowrap
     font-size 0.9rem
     position absolute
@@ -117,6 +124,28 @@ $navbar-horizontal-padding = 1.5rem
     .search-box
       flex: 0 0 auto
       vertical-align top
+    .div-out
+      position: fixed
+      right 0
+      top 0
+      height $navbarHeight
+      width 70%
+      min-width 500px
+      background-image linear-gradient(-5deg, #ff4b95, #ffca26)
+      overflow hidden
+      float right
+      z-index -1
+      .div-in
+        display: block
+        position relative
+        top 0em
+        right 10em
+        height 5em
+        width 120%
+        min-width 5px
+        background-color white
+        border-radius 0 100% 0 0
+      
 
 @media (max-width: $MQMobile)
   .navbar

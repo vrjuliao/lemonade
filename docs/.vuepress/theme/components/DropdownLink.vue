@@ -2,6 +2,7 @@
   <div
     class="dropdown-wrapper"
     :class="{ open }"
+    style="height: 1.4rem"
   >
     <a
       class="dropdown-title"
@@ -18,6 +19,7 @@
       <ul
         class="nav-dropdown"
         v-show="open"
+        style="margin-top: -4px"
       >
         <li
           class="dropdown-item"

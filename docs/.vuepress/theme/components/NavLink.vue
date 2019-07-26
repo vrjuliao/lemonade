@@ -47,3 +47,7 @@ export default {
   }
 }
 </script>
+<style lang="stylus">
+router-link
+  display block
+</style>
