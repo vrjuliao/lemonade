@@ -322,7 +322,7 @@ Vamos começar com gráficos mais simples e que exigirão menor esforço na cria
 Para gerar os gráficos, precisamos manipular os dados selecionando os atributos que vão compor os eixos. Para este exemplo, precisaremos do atributos **Pclass** e **Survived**. Vamos dar uma olhada na operação de agregação: **Agrupar linhas por função**. Precisamos contar os sobreviventes e mortos por cada uma das classes.\
 ![Agrupar linhas por função](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image21.png)\
 Para contar o número de sobreviventes e mortos por classe precisamos utilizar o atributo **Survived** como pivô, isto é os valores de **Survived** serão sumarizados em uma tabela agregada por classe. Isto explica porque os valores **0** e **1** foram inseridos na caixa **Atributo usado como pivô**. O resultado dessa operação pode ser visto em sequência no *preview*.\
-![Resultado - Agrupar linhas por função](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image79.png)\
+![Resultado - Agrupar linhas por função](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image79.png)
 
 Agora basta selecionar os atributos e criar as visualizações. O gráfico de rosca vai representar o número mortos por cada classe.\
 ![Seleção do gráfico de rosca](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image16.png)
@@ -347,7 +347,7 @@ Inicialmente, vamos começar por agregar os dados pelos dois atributos que desej
 Vamos ver um *preview* do resultado.\
 ![Preview do resultado](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image39.png)\
 Pronto. Agora basta ordenar os resultados por classe e plotar o gráfico de barras. Para ordenar utilizamos a operação **Ordenar**.\
-![Ordenar resultado](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image77.png)\
+![Ordenar resultado](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image77.png)
 
 Em seguida, selecione a operação **Gráfico de barras** para plotar as duas séries de dados, uma para *male* e outra para *female*.
 ![Selecionar gráfico de barras](/vuepress/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image48.png)\
