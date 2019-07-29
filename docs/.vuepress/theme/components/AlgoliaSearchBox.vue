@@ -21,6 +21,7 @@ export default {
 
   methods: {
     initialize (userOptions, lang) {
+      console.log('initialize')
       Promise.all([
         import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.js'),
         import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.css')

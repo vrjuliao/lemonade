@@ -12,13 +12,13 @@ module.exports = {
 	locales: {
 		'/': {
 			lang: 'en-US',
-			title: 'VuePress Test',
-			description: 'Testing VuePress'
+			title: 'Lemonade',
+			description: 'Documentation of Lemenoade'
 		},
 		'/pt-br/': {
 			lang: 'pt-br',
 			title: 'Lemonade',
-			description: 'Testando VuePress'
+			description: 'Documentação do Lemonade'
 		}
 	},
 
@@ -29,8 +29,9 @@ module.exports = {
 		//Header page logo
 		logo: '/img/logo.png',
 		
-		//searchBox feature
-		searchMaxSuggestions: 10,
+		//searchBox feature ?
+		searchMaxSuggestions: 6,
+		search: true,
 		
 		//support languages
 		locales: {
@@ -41,9 +42,16 @@ module.exports = {
 					{
 						//text: '<label on navbar>', link: '<link to redirect>'
 						text: 'Home', link: '/'
+					},
+					{ 
+						text: 'Platforms',
+						items: [
+							{ text: 'Keras', link: '/keras'},
+							{ text: 'Spark', link: '/spark'}
+						],
 					}
 				],
-				sidebar: [
+				/*sidebar: [
 					{
 						type : 'group',
 						title: '1',
@@ -61,7 +69,14 @@ module.exports = {
 							}
 						]
 					}
-				]
+				]*/
+				sidebar: {
+					'/': [
+						['', 'About'],
+						['/instalation.md', 'Instalation'],
+						['/architecture.md', 'Architecture']
+					]
+				}
 			},
 			'/pt-br/' : {
 				selectText: 'Idiomas',
@@ -71,11 +86,18 @@ module.exports = {
 						//text: '<label on navbar>', link: '<link to redirect>'
 						text: 'Início', link: '/pt-br/'
 					},
-					{ text: 'Keras', link: '/pt-br/keras'},
-					{ text: 'Spark', link: '/pt-br/spark/visualizacao_de_dados/sumario_estatistico'}
+					{ 
+						text: 'Plataformas',
+						items: [
+							{ text: 'Keras', link: '/pt-br/keras'},
+							{ text: 'Spark', link: '/pt-br/spark/visualizacao_de_dados/sumario_estatistico'}
+						],
+					}
 				],
 				sidebar: {
-					'/pt-br/spark/' : [
+					// '/pt-br/spark/' : [
+					// 'spark/' : [
+					'/pt-br/spark/': [
 						{
 							title: 'Visualização de Dados',
 							collapsable: true,
@@ -186,6 +208,11 @@ module.exports = {
 								['aprendizado_de_maquina/regressor_linear.md', 'Regressão - Regressor Linear']
 							]
 						}
+					],
+					'/': [
+						['', 'About'],
+						['/instalation.md', 'Instalation'],
+						['/architecture.md', 'Architecture']
 					]
 				}
 			}
