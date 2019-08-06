@@ -12,13 +12,13 @@ module.exports = {
 	locales: {
 		'/': {
 			lang: 'en-US',
-			title: 'Lemonade',
-			description: 'Documentation of Lemenoade'
+			title: 'LEMONADE Documentation',
+			description: 'LEMONADE Documentation'
 		},
 		'/pt-br/': {
 			lang: 'pt-br',
-			title: 'Lemonade',
-			description: 'Documentação do Lemonade'
+			title: 'Documentação LEMONADE',
+			description: 'Documentação LEMONADE'
 		}
 	},
 
@@ -205,14 +205,21 @@ module.exports = {
 							children: [
 								//['<route>', '<label to show on sidebar>']
 								['aprendizado_de_maquina/regressor_linear_generalizado.md', 'Regressão - Regressor Linear Generalizado'],
-								['aprendizado_de_maquina/regressor_linear.md', 'Regressão - Regressor Linear']
+								['aprendizado_de_maquina/regressor_linear.md', 'Regressão - Regressor Linear'],
+								['aprendizado_de_maquina/regressao_isotonica.md', 'Regressão - Regressão Isotônica'],
+								['aprendizado_de_maquina/regressao_random_forest.md', 'Regressão - Random Forest'],
+								['aprendizado_de_maquina/regressao_gradient_boosted_tree.md', 'Regressão - Gradient Boosted Tree'],
+								['aprendizado_de_maquina/anomalias_local_outlier_factor.md', 'Anomalias - Local Outlier Factor'],
+								['aprendizado_de_maquina/classificacao_voto_por_maioria.md', 'Classificação - Voto por Maioria'],
+								['aprendizado_de_maquina/classificacao_support_vector_machines.md', 'Classificação - Support Vector Machines'],
 							]
 						}
 					],
-					'/': [
+					'/pt-br/': [
 						['', 'About'],
-						['/instalation.md', 'Instalation'],
-						['/architecture.md', 'Architecture']
+						['data_science.md', 'Data Science'],
+						['instalation.md', 'Instalation'],
+						['architecture.md', 'Architecture']
 					]
 				}
 			}

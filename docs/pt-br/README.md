@@ -1,8 +1,8 @@
-# About Lemonade
+# ![Logo](/vuepress/img/logo.png) LEMONADE
+**L**ive **E**xploration and **M**ining **O**f **N**on-trivial **A**mount of **D**ata from **E**verywhere
 
-### Lemonade Overview
-
-Lemonade (**L**ive **E**xploration and **M**ining **O**f **N**on-trivial **A**mount of **D**ata from **E**verywhere) is a visual platform for distributed computing, aimed to enable implementation, experimentation, test and deploying of data processing and machine learning applications. It provides a higher level of abstractions, called operations, to users build processing workflows using a graphical web interface. By using high performance and scalable technologies, such as COMPSs, Ophidia and Spark, Lemonade can process very large amount of data, hiding all backend complexity from the users and allowing them to focus mainly in the construction of the solution.
+## Overview
+LEMONADE is a visual platform for distributed computing, aimed to enable implementation, experimentation, test and deploying of data processing and machine learning applications. It provides a higher level of abstractions, called operations, to users build processing workflows using a graphical web interface. By using high performance and scalable technologies, such as COMPSs, Ophidia and Spark, Lemonade can process very large amount of data, hiding all backend complexity from the users and allowing them to focus mainly in the construction of the solution.
 
 Lemonade is implemented as an open-source tool and is under development as a product of [EUBra-BIGSEA](http://www.eubra-bigsea.eu/) project
 
@@ -76,7 +76,7 @@ After submitting a workflow, a job is launched to process the workflow. The DAG 
 ### Visualizations and dashboards
 Todo
 
-# Supported platforms
+## Supported platforms
 
 Lemonade currently supports 3 execution platforms:
 
@@ -85,3 +85,25 @@ Lemonade currently supports 3 execution platforms:
 * [Python Scikit Learn](http://scikit-learn.org/stable/) + [Pandas](http://pandas.pydata.org/). Under development. Prelimary code generation, not all operations supported.
 
 New platforms can be developed. See _[developing for new platforms]()_ in the Programming Guide.
+
+## Supporters
+
+<div style="margin-top: 32px;width: 100%; text-align: center"><a style="" href="https://www.atmosphere-eubrazil.eu/" title="Atmosphere"><img src="/vuepress/img/atmosphere.png" alt="Atmosphere"></a></div>
+
+<div style="width: 100%; text-align: center">
+	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="EUBRA BIGSEA"><img style="margin-top: 32px;max-width: 200px;" src="/vuepress/img/bigsea.png" alt="EUBRA BIGSEA"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="Inweb"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/inweb.png" alt="Inweb"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="CTIC"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/ctic.png" alt="CTIC"></a>
+</div>
+
+<div style="width: 100%; text-align: center">
+	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="RNP"><img style="margin-top: 32px;max-width: 200px;" src="/vuepress/img/rnp.png" alt="RNP"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CEWEB"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/ceweb.png" alt="CEWEB"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="NICBR"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/nic.png" alt="NICBR"></a>
+</div>
+
+<div style="width: 100%; text-align: center">
+	<a href="https://www.atmosphere-eubrazil.eu/" title="CNPq"><img style="margin-top: 32px;max-width: 200px;" src="/vuepress/img/cnpq.png" alt="CNPq"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CAPES"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/capes.png" alt="CAPES"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="FAPEMIG"><img style="margin-top: 32px; max-width: 200px;" src="/vuepress/img/fapemig.png" alt="FAPEMIG"></a>
+</div>
