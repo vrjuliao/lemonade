@@ -5,6 +5,8 @@ module.exports = {
 
 	//html header
 	head: [
+		['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+		['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }],
 		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/logo.png' }]
 	],
 
@@ -212,6 +214,17 @@ module.exports = {
 								['aprendizado_de_maquina/anomalias_local_outlier_factor.md', 'Anomalias - Local Outlier Factor'],
 								['aprendizado_de_maquina/classificacao_voto_por_maioria.md', 'Classificação - Voto por Maioria'],
 								['aprendizado_de_maquina/classificacao_support_vector_machines.md', 'Classificação - Support Vector Machines'],
+								['aprendizado_de_maquina/classificacao_regressao_logistica.md', 'Classificação - Regressão Logística'],
+								['aprendizado_de_maquina/classificacao_random_forest.md', 'Classificação - Random Forest'],
+								['aprendizado_de_maquina/classificacao_perceptron_multicamadas.md', 'Classificação - Perceptron Multicamadas'],
+								['aprendizado_de_maquina/classificacao_naive_bayes.md', 'Classificação - Perceptron Multicamadas'],
+								['aprendizado_de_maquina/classificacao_gradient_boosted_tree.md', 'Classificação - Gradient Boosted Tree'],
+								['aprendizado_de_maquina/classificacao_arvore_de_decisao.md', 'Classificação - Árvore de Decisão'],
+								['aprendizado_de_maquina/associacao_regras_de_associacao.md', 'Associação - Regras de Associação'],
+								['aprendizado_de_maquina/associacao_mineracao_de_sequencias.md', 'Associação - Mineração de Sequências'],
+								['aprendizado_de_maquina/associacao_mineracao_de_itemsets_frequentes.md', 'Associação - Mineração de Itemsets Frequentes'],
+								['aprendizado_de_maquina/agrupamento_mistura_de_gaussianas.md', 'Agrupamento - Mistura de Gaussianas'],
+								['aprendizado_de_maquina/agrupamento_k_means.md', 'Agrupamento - K-Means'],
 							]
 						}
 					],
@@ -223,6 +236,12 @@ module.exports = {
 					]
 				}
 			}
+		}
+	},
+	markdown: {
+		anchor: { permalink: false },
+		config: md => {
+			md.use(require("markdown-it-katex"));
 		}
 	}
 }

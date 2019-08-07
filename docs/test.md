@@ -34,3 +34,4 @@ Nome da Tarefa
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Link na propria pagina]: #link-vem-pra-ca
+[1]: /pt-br/
